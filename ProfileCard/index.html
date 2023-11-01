@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Profile Card</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .profileCard {
+        background-color: aqua;
+        height: 40%;
+        width: 40%;
+        border-radius: 24px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+      }
+
+      #socialMedia {
+        display: flex;
+        justify-content: center;
+        padding-left: 0;
+      }
+      #socialMedia li {
+        list-style-type: none;
+        margin: auto 0.5rem;
+        border-radius: 50%;
+        background-color: aqua;
+        padding: 0.5rem;
+        background-color: blue;
+      }
+      #socialMedia li i {
+        font-size: 1.2rem;
+        color: white;
+      }
+
+      .numbers ul {
+        display: flex;
+      }
+      .numbers ul li {
+        list-style-type: none;
+        margin-right: 0.5rem;
+        padding: 0.2rem 0.5rem;
+        border-right: solid 1px grey;
+      }
+
+      .numbers ul li:last-child {
+        border-right: none;
+      }
+      .buttons button {
+        color: white;
+        background-color: skyblue;
+        padding: 0.4rem 1rem;
+        border-radius: 1rem;
+        border: none;
+      }
+
+      #text-data {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      #text-data #name {
+        font-size: 1.5rem;
+        font-weight: 500;
+        margin-top: 0.5rem;
+      }
+      #text-data #job {
+        color: #333;
+        margin-top: 0.2rem;
+      }
+      #picture {
+        position: relative;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        padding: 8px;
+        background-color: #4070f4;
+      }
+      #picture .profile-picture {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 2px solid white;
+        background-color: azure;
+      }
+
+      .profileCard::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 36%;
+        width: 100%;
+        border-radius: 24px 24px 0 0;
+        background-color: #4070f4;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="profileCard">
+      <div id="picture">
+        <img src="./images/user.png" alt="" class="profile-picture" />
+      </div>
+      <div id="text-data">
+        <span id="name">Sanjay Kumar</span>
+        <span id="job">Software Developer</span>
+      </div>
+      <ul id="socialMedia">
+        <li id="facebook"><i class="fa-brands fa-facebook"></i></li>
+        <li id="twitter"><i class="fa-brands fa-twitter"></i></li>
+        <li id="instagram"><i class="fa-brands fa-instagram"></i></li>
+        <li id="youtube"><i class="fa-brands fa-youtube"></i></li>
+      </ul>
+      <div class="buttons">
+        <button>Subscribe</button>
+        <button>Message</button>
+      </div>
+      <div class="numbers">
+        <ul>
+          <li id="likes"><i class="fa-regular fa-heart"></i> 60k</li>
+          <li id="comment"><i class="fa-regular fa-comment"></i> 20k</li>
+          <li id="share"><i class="fa-solid fa-share"></i> 12k</li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

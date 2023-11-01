@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(27, 188, 157);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    max-width: 480px;
+    width: 50%;
+    background-color: rgb(255,255,255);
+    text-align: center;
+    border-radius: 5px;
+}
+
+form h2 {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: rgb(23,160,135);
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 5px 5px 0 0;
+}
+
+.content {
+    width: 90%;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+.field {
+    border: 1px solid grey;
+    width: 80%;
+    margin: 10px auto;
+    display: flex;
+}
+
+.field input {
+    border: none;
+    flex: 1;
+    width: 100%;
+}
+
+.field input:focus {
+    outline: none;
+}
+.field i {
+    background-color: rgb(23,160,135) ;
+    padding: 8px;
+    margin-right: 8px;
+}
+#forgetPass {
+    color: rgb(23,160,135,0.7);
+    text-align: left;
+    margin-left: 40px;
+    cursor: pointer;
+    transition: all ease 0.6s;
+}
+
+#forgetPass:hover {
+    color: rgb(23,160,135,1);
+}
+
+#login {
+    width: 80%;
+    margin: 10px auto;
+    padding: 8px;
+    border-radius: 5px;
+    background-color: rgb(23,160,135, 0.7) ;
+    transition: all ease 0.5s;
+}
+
+#login:hover {
+    background-color: rgb(23,160,135, 1) ;
+}
+
+#registerMsg {
+    margin: 15px auto;
+}
+
+#registerMsg span {
+    color: rgba(23,160, 135, 0.7);
+    cursor: pointer;
+}
+
+#registerMsg span:hover{
+    color: rgba(23,160, 135, 1);
+}

@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    background: url(./bg.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    opacity: 0.5;
+}
+
+aside {
+    position: relative;
+}
+
+.button-1 {
+    position: absolute;
+    left: 20px;
+    top: 15px;
+}
+.button-1 i {
+    color: #fff;
+    font-size: 25px;
+    line-height: 10px;
+}
+
+.navbar {
+    background-color: rgba(90,232,149, 0.5);
+    box-shadow: 2px 2px 20px rgba(0,232,14, 0.5);
+    height: 100vh;
+    width: 28vw;
+    margin-left: -30vw;
+   
+}
+
+.navbar .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(97, 227, 152, 0.5);
+    box-shadow: 2px 2px 20px rgba(0,232,14, 0.5);
+    padding: 1rem 1rem;
+    margin-bottom: 1rem;
+}
+
+.navbar .header .heading {
+    justify-self: center;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 500;
+    flex: 1;
+    text-align: center;
+}
+
+
+.navitems .item {
+    margin-bottom: 1.5rem;
+    padding: 1rem 2rem;
+    color: white;
+    font-size: 1.4rem;
+}
+
+.navitems .item:hover {
+    background-color: rgba(97, 227, 152, 0.5);
+    box-shadow: 2px 2px 20px rgba(0,232,14, 0.5);
+}
+
+.navitems .item i {
+    margin-right: 0.4rem;
+    color: white
+}
+
+.navbar .footer {
+   position: relative;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   top: 330px;
+}
+
+
+.navbar .footer div {
+    padding: 0 6px;
+}
+
+.navbar .footer div i {
+    color: white;
+    font-size: 1.5rem;
+}
+
+#check {
+    display: none;
+}
+
+#check:checked ~ .navbar {
+   margin-left: 0;
+}
+#check:checked ~ .button-1 {
+    display: none;
+}

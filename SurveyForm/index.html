@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>GeeksforGeeks Survey Form</h1>
+
+    <form method="post" action="" id="form">
+      <div class="form-control">
+        <label for="name" id="label-name">Name</label>
+        <input id="name" placeholder="Enter your name" type="text" />
+      </div>
+
+      <div class="form-control">
+        <label for="email" id="label-email">Email</label>
+        <input type="email" placeholder="Enter your email" id="email" />
+      </div>
+
+      <div class="form-control">
+        <label for="age" id="label-age">Age</label>
+        <input type="number" id="age" placeholder="Enter your age" />
+      </div>
+
+      <div class="form-control">
+        <label for="role" id="label-role"
+          >Which option best describes you?</label
+        >
+        <select id="role" name="role">
+          <option value="student" selected>Student</option>
+          <option value="teacher">Teacher</option>
+          <option value="professional">Professional</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+
+      <div class="form-control">
+        <label>Would you recommend GeeksforGeeks to a frined?</label>
+        <label for="recomend-1"
+          ><input
+            type="radio"
+            value="yes"
+            id="recomend-1"
+            name="recomend"
+          />Yes</label
+        >
+        <label for="recomend-2"
+          ><input
+            type="radio"
+            value="no"
+            id="recomend-2"
+            name="recomend"
+          />No</label
+        >
+        <label for="recomend-3">
+          <input
+            type="radio"
+            value="maybe"
+            id="recomend-3"
+            name="recomend"
+          />Maybe</label
+        >
+      </div>
+
+      <div class="form-control">
+        <label
+          >Languages and Frameworks known
+          <small> (Check all that apply)</small></label
+        >
+        <label for="tech"
+          ><input type="checkbox" id="tech" value="c" name="lang" />C</label
+        >
+        <label for="tech"
+          ><input type="checkbox" id="tech" value="c++" name="lang" />C++</label
+        >
+        <label for="tech"
+          ><input type="checkbox" id="tech" value="c#" name="lang" />C#</label
+        >
+        <label for="tech"
+          ><input
+            type="checkbox"
+            id="tech"
+            value="java"
+            name="lang"
+          />Java</label
+        >
+        <label for="tech"
+          ><input
+            type="checkbox"
+            id="tech"
+            value="python"
+            name="lang"
+          />Python</label
+        >
+        <label for="tech"
+          ><input
+            type="checkbox"
+            id="tech"
+            value="javascript"
+            name="lang"
+          />JavaScript</label
+        >
+        <label for="tech"
+          ><input
+            type="checkbox"
+            id="tech"
+            value="react"
+            name="lang"
+          />React</label
+        >
+        <label for="tech"
+          ><input
+            type="checkbox"
+            id="tech"
+            value="angular"
+            name="lang"
+          />Angular</label
+        >
+        <label for="tech"
+          ><input
+            type="checkbox"
+            id="tech"
+            value="django"
+            name="lang"
+          />Django</label
+        >
+        <label for="tech"
+          ><input
+            type="checkbox"
+            id="tech"
+            value="spring"
+            name="lang"
+          />Spring</label
+        >
+      </div>
+
+      <div class="form-control">
+        <label for="comment">Any comments or suggestions</label>
+        <textarea
+          id="comment"
+          name="comment"
+          placeholder="Enter your comment here"
+        ></textarea>
+      </div>
+
+      <button type="submit" value="submit">Submit</button>
+    </form>
+  </body>
+</html>
