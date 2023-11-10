@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: url("https://images.unsplash.com/photo-1575086049546-e44d50e83b8a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-position: center;
+    opacity: 2;
+}
+
+li {
+    list-style: none;
+}
+
+a, i{
+    text-decoration:  none;
+    color: white;
+    font-size: 1.2rem;
+}
+
+/**---------- Header --------------- */
+ 
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+    width: 100vw;
+    padding: 0.5rem 1.5rem;
+    position: sticky;
+    top: 0;
+    background-color: rgba(32,171,200, 0.8);
+    box-shadow:  0px 5px 15px  rgba(44, 123, 139, 0.8);
+}
+
+.header-logo a {
+    font-size: 2rem;
+}
+
+.menu-options {
+    display: flex;
+    gap: 1.5rem;
+}
+.menu-options li a:hover {
+    opacity: 0.5;
+}
+
+.action-btn {
+    background-color: rgb(2,3,113) ;
+    border-radius: 1rem;
+    padding: 0.3rem 0.8rem;
+    cursor: pointer;
+}
+.action-btn a:hover {
+    opacity: 0.5;
+}
+
+.toggle-btn {
+    display: none;
+}
+
+.dropdown-menu {
+    position: absolute;
+    right: 2rem;
+    top: 4rem;
+    background-color: rgba(122, 213, 231, 0.8);
+    width: 20vw;
+    overflow: hidden;
+    border-radius: 0.7rem;
+    padding: 0.5rem;
+    display: none;
+}
+
+.open {
+    display: block;
+}
+
+.dropdown-menu li {
+    padding: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+/** ---------- Responsive Desing------------- */
+
+@media (max-width: 992px) {
+    .navbar .menu-options, .navbar .action-btn {
+        display: none;
+    }
+    .navbar .toggle-btn {
+        display: block;
+    }
+    
+}
